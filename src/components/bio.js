@@ -1,22 +1,16 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-
-import { rhythm } from "../utils/typography"
+import { rhythm } from '../utils/typography';
 
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author, social } = data.site.siteMetadata;
+
         return (
           <div
             style={{
@@ -38,18 +32,17 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong> who lives and works in Paris.<br />
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a target="_blank" href={`https://github.com/${social.github}`}>
+                GitHub
               </a>
             </p>
           </div>
         )
       }}
     />
-  )
+  );
 }
 
 const bioQuery = graphql`
@@ -65,11 +58,11 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          github
         }
       }
     }
   }
-`
+`;
 
-export default Bio
+export default Bio;

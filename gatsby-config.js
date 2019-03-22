@@ -5,7 +5,7 @@ module.exports = {
     description: `Thoughts and guides on modern JavaScript.`,
     siteUrl: `https://totominc.dev`,
     social: {
-      twitter: `totominc`,
+      github: `totominc`,
     },
   },
   plugins: [
@@ -30,7 +30,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 690,
             },
           },
           {
