@@ -1,6 +1,8 @@
 import Typography from 'typography';
 import DeYoung from 'typography-theme-de-young';
 
+import './global.css';
+
 DeYoung.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
