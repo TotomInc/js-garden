@@ -34,7 +34,7 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong> who lives and works in Paris.<br />
               {` `}
-              <a target="_blank" href={`https://github.com/${social.github}`}>
+              <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${social.github}`}>
                 GitHub
               </a>
             </p>
