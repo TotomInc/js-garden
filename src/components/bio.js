@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
@@ -8,7 +8,7 @@ function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author, social } = data.site.siteMetadata;
 
         return (
@@ -32,14 +32,15 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Paris.<br />
+              Written by <strong>{author}</strong> who lives and works in Paris.
+              <br />
               {` `}
-              <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${social.github}`}>
+              <a target='_blank' rel='noopener noreferrer' href={`https://github.com/${social.github}`}>
                 GitHub
               </a>
             </p>
           </div>
-        )
+        );
       }}
     />
   );
