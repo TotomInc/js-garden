@@ -32,7 +32,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Paris.
+              Written by <strong>{author}</strong> who makes random JavaScript stuff.
               <br />
               {` `}
               <a target='_blank' rel='noopener noreferrer' href={`https://github.com/${social.github}`}>
