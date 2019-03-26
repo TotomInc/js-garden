@@ -62,7 +62,13 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()} Thomas Cazade</footer>
+        <footer
+          style={{
+            marginTop: rhythm(1),
+          }}
+        >
+          © {new Date().getFullYear()} Thomas Cazade
+        </footer>
       </div>
     );
   }
