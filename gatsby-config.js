@@ -3,7 +3,7 @@ module.exports = {
     title: `JS Garden`,
     author: `Thomas Cazade`,
     description: `Thoughts and guides on modern JavaScript.`,
-    siteUrl: `https://totominc.dev`,
+    siteUrl: `https://blog.totominc.io`,
     social: {
       github: `totominc`,
     },
